@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Intro section dropdown menu</title>
   <link rel="shortcut icon" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <header>
     <nav class="menu-left">
-      <div class="item-menu-left menu-left-image">
+      <span class="item-menu-left menu-left-image">
         <img src="/images/logo.svg" alt="">
-      </div>
-      <a href="#" class="item-menu-left item-features">Features</a>
-      <a href="#" class="item-menu-left item-company">Company</a>
+      </span>
+      <a href="#" class="item-menu-left item-features">Features <img id="arrow-1" src="/images/icon-arrow-down.svg" alt=""></a>
+      <a href="#" class="item-menu-left item-company">Company <img id="arrow-2" src="/images/icon-arrow-down.svg" alt=""></a>
       <a href="#" class="item-menu-left">Careers</a>
       <a href="#" class="item-menu-left">About</a>
+
+      <div class="dropdown dropdown-features">
+        <a href="#"><img src="/images/icon-todo.svg" alt=""> Todo list</a>
+        <a href="#"><img src="/images/icon-calendar.svg" alt="">Calendar</a>
+        <a href="#"><img src="/images/icon-reminders.svg" alt="">Reminders</a>
+        <a href="#"><img src="/images/icon-planning.svg" alt="">Planning</a>
+      </div>
+      <div class="dropdown dropdown-company">
+        <a href="#">History</a>
+        <a href="#">Our Team</a>
+        <a href="#">Blog</a>
+      </div>
     </nav>
     <nav class="menu-rigth">
       <a href="#">Login</a>
-      <a href="#">Register</a>
+      <a href="#" class="item-register">Register</a>
     </nav>
   </header>
   <main>
@@ -51,6 +64,6 @@
       </div>
     </section>
   </main>
+  <script src="/scripts/script.js"></script>
 </body>
 </html>
-
