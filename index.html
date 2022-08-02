@@ -34,11 +34,14 @@
       <a href="#">Login</a>
       <a href="#" class="item-register">Register</a>
     </nav>
+    <button class="menu-mobile">
+      <img src="/images/icon-menu.svg" alt="">
+    </button>
   </header>
   <main>
     <section>
       <div class="section-left">
-        <h1>Make remote work</h1>
+        <h1>Make <br>remote work</h1>
         <p>
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
@@ -60,7 +63,10 @@
         </div>
       </div>
       <div class="section-rigth">
-        <img src="/images/image-hero-desktop.png" alt="">
+        <picture>
+          <source srcset="/images/image-hero-mobile.png" media="(max-width: 950px)">
+          <img src="/images/image-hero-desktop.png" alt="">
+        </picture>
       </div>
     </section>
   </main>
