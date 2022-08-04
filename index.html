@@ -34,14 +34,64 @@
       <a href="#">Login</a>
       <a href="#" class="item-register">Register</a>
     </nav>
+    <picture>
+      <source srcset="images/logo.svg" media="(max-width: 950px)">
+      <img src="" alt="">
+    </picture>
     <button class="menu-mobile">
       <img src="/images/icon-menu.svg" alt="">
     </button>
+
+    <div class="div-menu-mobile">
+      <div class="div-close-button">
+        <button class="close-menu-button">
+          <img src="/images/icon-close-menu.svg" alt="">
+        </button>
+      </div>
+      <nav class="menu-left-mobile">
+        <a href="#" class="item-menu-left item-features-mobile">Features <img id="arrow-1" src="/images/icon-arrow-down.svg" alt=""></a>
+
+        <div class="mobile-features-dropdown">
+          <a href="#"><img src="/images/icon-todo.svg" alt=""> Todo list</a>
+          <a href="#"><img src="/images/icon-calendar.svg" alt="">Calendar</a>
+          <a href="#"><img src="/images/icon-reminders.svg" alt="">Reminders</a>
+          <a href="#"><img src="/images/icon-planning.svg" alt="">Planning</a>
+        </div>
+
+        <a href="#" class="item-menu-left item-company-mobile">Company <img id="arrow-2" src="/images/icon-arrow-down.svg" alt=""></a>
+
+        <div class="mobile-company-dropdown">
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <a href="#" class="item-menu-left">Careers</a>
+        <a href="#" class="item-menu-left">About</a>
+  
+        <div class="dropdown dropdown-features">
+          <a href="#"><img src="/images/icon-todo.svg" alt=""> Todo list</a>
+          <a href="#"><img src="/images/icon-calendar.svg" alt="">Calendar</a>
+          <a href="#"><img src="/images/icon-reminders.svg" alt="">Reminders</a>
+          <a href="#"><img src="/images/icon-planning.svg" alt="">Planning</a>
+        </div>
+        <div class="dropdown dropdown-company">
+          <a href="#">History</a>
+          <a href="#">Our Team</a>
+          <a href="#">Blog</a>
+        </div>
+      </nav>
+      <nav class="menu-rigth-mobile">
+        <a href="#">Login</a>
+        <a href="#" class="item-register">Register</a>
+      </nav>
+    </div>
+
   </header>
   <main>
     <section>
       <div class="section-left">
-        <h1>Make <br>remote work</h1>
+        <h1>Make remote work</h1>
         <p>
           Get your team in sync, no matter your location. Streamline processes,
           create team rituals, and watch productivity soar.
@@ -69,6 +119,8 @@
         </picture>
       </div>
     </section>
+    <div class="menu-bg-mask">
+    </div>
   </main>
   <script src="/scripts/script.js"></script>
 </body>

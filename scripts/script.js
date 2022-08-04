@@ -6,6 +6,19 @@ let company = document.querySelector('.item-company')
 let companyDrop = document.querySelector('.dropdown-company')
 let companyArrow = document.querySelector('.arrow-2')
 
+let menuMobile = document.querySelector('.menu-mobile')
+let closeMenu = document.querySelector('.close-menu-button')
+let divMenu = document.querySelector('.div-menu-mobile')
+let bgMask = document.querySelector('.menu-bg-mask')
+
+let mobileFeat = document.querySelector('.item-features-mobile')
+let mobileFeatDrop = document.querySelector('.mobile-features-dropdown')
+let featDropControl = false
+
+let mobileComp = document.querySelector('.item-company-mobile')
+let mobileCompDrop = document.querySelector('.mobile-company-dropdown')
+let compDropControl = false
+
 features.addEventListener('mouseover', function() {
 
     let rectFeatures = features.getBoundingClientRect()
@@ -55,4 +68,53 @@ company.addEventListener('mouseout', function() {
     })
 
     companyDrop.style.display = 'none'
+})
+
+menuMobile.addEventListener('click', function () {
+    divMenu.style.display = 'flex'
+    bgMask.style.display = 'block'
+})
+
+closeMenu.addEventListener('click', function () {
+    divMenu.style.display = 'none'
+    bgMask.style.display = 'none'
+})
+
+bgMask.addEventListener('click', function () {
+    divMenu.style.display = 'none'
+    bgMask.style.display = 'none'
+})
+
+mobileFeat.addEventListener('click', function () {
+    if (!featDropControl) {
+        mobileFeatDrop.style.display = 'block'
+        featDropControl = true
+    }
+    else {
+        mobileFeatDrop.style.display = 'none'
+        featDropControl = false
+    }
+})
+
+mobileComp.addEventListener('click', function () {
+    if (!compDropControl) {
+        mobileCompDrop.style.display = 'block'
+        compDropControl = true
+    }
+    else {
+        mobileCompDrop.style.display = 'none'
+        compDropControl = false
+    }
+})
+
+
+
+window.addEventListener('resize', function () {
+    divMenu.style.display = 'none'
+    bgMask.style.display = 'none'
+    mobileFeatDrop.style.display = 'none'
+    mobileCompDrop.style.display = 'none'
+
+    featDropControl = false
+    compDropControl = false
 })
